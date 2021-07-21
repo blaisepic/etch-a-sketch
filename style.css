@@ -5,6 +5,7 @@ html, body {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    background: #ededed;
 }
 
 .container {
@@ -42,10 +43,21 @@ cell {
 .button {
     position: fixed;
     top: 3rem;
-    left: 55.5rem;
+    left: 55.3rem;
+    font-weight: bold;
     height: 4rem;
     width: 6rem;
-    background-color: blue;
-    border: .2rem solid black;
+    background: rgba(0, 0, 0, .5);
+    border: .15rem solid black;
     border-radius: .5rem;
 }
+
+.button:hover { 
+    transform: scale(1.1);
+}
+
+header {
+    margin-top: 3rem;
+    padding: 2rem;
+    font-size: 3.2rem;
+  }
