@@ -8,17 +8,20 @@ html, body {
     background: #ededed;
 }
 
+.container-container {
+    width: 100%;
+    margin: auto;
+}
+
 .container {
     position: fixed;
-    bottom: 4rem;
-    left: 35rem;
     display: flex;
     flex-direction: column;
-    height: 45rem;
-    width: 45rem;
+    height: 40rem;
+    width: 40rem;
     flex-wrap: wrap;
     margin-top: auto;
-    border: .2rem solid rgba(2, 2, 2, 0.678);
+    border: .4rem solid black;
     border-radius: .5rem;
 }
 
@@ -27,13 +30,12 @@ row {
     display: flex;
     flex-direction: row;    
     flex-wrap: wrap;
-    background: red;
 }
 
 cell {
     flex: 1;
-    background: orange;
-    border: 1px solid gold;
+    background: white;
+    border: 1px solid black;
 }
 
 .hover {
