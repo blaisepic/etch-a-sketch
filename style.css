@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.container {
+    position: fixed;
+    bottom: 4rem;
+    left: 35rem;
+    display: flex;
+    flex-direction: column;
+    height: 45rem;
+    width: 45rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    background: red;
+}
+
+cell {
+    flex: 1;
+    background: orange;
+    border: 1px solid gold;
+}
+
+.hover {
+    background-color: purple;
+}
+
+.button {
+    position: fixed;
+    top: 3rem;
+    left: 54rem;
+    height: 4rem;
+    width: 6rem;
+    background-color: blue;
+}
