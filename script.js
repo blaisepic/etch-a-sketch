@@ -1,4 +1,5 @@
 //element selectors
+let gridContainer = document.querySelector(`div[class="grid"]`);
 let container = document.querySelector(`div[class="container"]`);
 
 //create grid
@@ -10,7 +11,7 @@ function createGrid(size) {
             cell.addEventListener('mouseenter', () => cell.classList.add('hover'));
             row.appendChild(cell);
         }
-        container.appendChild(row);
+        gridContainer.appendChild(row);
     }
 }
 
@@ -30,6 +31,7 @@ cellsArr.forEach(cell => {
 let resetBTN = document.createElement("button");
 resetBTN.textContent = "Reset Grid";
 resetBTN.classList.add('button');
+container.appendChild(resetBTN);
 
 //add reset functionality and prompt when button is clicked
 resetBTN.onclick = resetGrid;
@@ -46,7 +48,7 @@ function userPrompt() {
     let input = "";
     let gridSize = 101;
     while(isNaN(gridSize) || gridSize > 100){
-        input = prompt("Please enter your desired grid size.", "40");
+        input = prompt("Enter desired number of rows and columns: ", "40");
         gridSize = parseInt(input);
     }
     
@@ -60,9 +62,6 @@ function userPrompt() {
     })
     createGrid(gridSize);
 }
-
-//append resetBTN to container
-container.appendChild(resetBTN);
 
 //original grid creation
 // for(let i = 0; i < 16; i++){
